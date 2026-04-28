@@ -139,10 +139,8 @@ This repo is provider-neutral and works with OpenAI-compatible APIs, including C
 ## Community
 ## 社区
 
-- Discussions: <https://github.com/aldenpang/Enreal-AI-Game-Studio/discussions>
 - Issues: <https://github.com/aldenpang/Enreal-AI-Game-Studio/issues>
 
-- 讨论区：<https://github.com/aldenpang/Enreal-AI-Game-Studio/discussions>
 - 问题反馈：<https://github.com/aldenpang/Enreal-AI-Game-Studio/issues>
 
 ---
