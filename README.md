@@ -131,8 +131,8 @@ production/
 ## Model-Agnostic Design
 ## 模型无关设计
 
-This repo is provider-neutral and works with OpenAI-compatible APIs, including Codex-style models, DeepSeek, and local models via Ollama/vLLM.
-本仓库是提供方中立设计，支持 OpenAI 兼容 API，包括 Codex 类模型、DeepSeek，以及通过 Ollama/vLLM 接入的本地模型。
+This repo is provider-neutral and works with OpenAI-compatible APIs, including Codex-style models, DeepSeek, Gemini (via compatible gateway), and local models via Ollama/vLLM.
+本仓库是提供方中立设计，支持 OpenAI 兼容 API，包括 Codex 类模型、DeepSeek、Gemini（通过兼容网关接入），以及通过 Ollama/vLLM 接入的本地模型。
 
 ---
 

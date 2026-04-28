@@ -3,6 +3,7 @@ default_provider: openai_compatible
 auth:
   openai_api_key: "${OPENAI_API_KEY}"
   deepseek_api_key: "${DEEPSEEK_API_KEY}"
+  openrouter_api_key: "${OPENROUTER_API_KEY}" # for Gemini via OpenAI-compatible gateway
 
 providers:
   openai_compatible:
@@ -24,3 +25,8 @@ providers:
     base_url: "http://localhost:11434/v1"
     model: "gemma3:latest"
     api_key_env: "OLLAMA_API_KEY" # optional for local ollama
+
+  gemini:
+    base_url: "https://openrouter.ai/api/v1" # or any OpenAI-compatible Gemini gateway
+    model: "google/gemini-2.5-pro"
+    api_key_env: "OPENROUTER_API_KEY"
