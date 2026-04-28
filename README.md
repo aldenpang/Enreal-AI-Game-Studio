@@ -13,7 +13,7 @@
   <a href=".studio/skills"><img src="https://img.shields.io/badge/skills-72-green" alt="72 Skills"></a>
   <a href=".studio/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".studio/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
-  <a href="https://github.com/features/models"><img src="https://img.shields.io/badge/built%20for-Claude%20Code-f5f5f5?logo=provider" alt="Built for AI Coding Assistant"></a>
+  <a href="https://github.com/features/models"><img src="https://img.shields.io/badge/built%20for-Any%20AI%20Model-f5f5f5?logo=provider" alt="Built for AI Coding Assistant"></a>
   <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
   <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
@@ -137,7 +137,7 @@ Type `/` in AI Coding Assistant to access all 72 skills:
 ### Prerequisites
 
 - [Git](https://git-scm.com/)
-- Any coding AI client (OpenClaw/Codex CLI/Claude Code/Cursor/Windsurf/custom)
+- Any coding AI client (OpenClaw/Codex CLI/AI coding assistant/Cursor/Windsurf/custom)
 - Python 3.10+
 - **Recommended**: [jq](https://jqlang.github.io/jq/) (for hook validation)
 
@@ -166,7 +166,7 @@ All hooks fail gracefully if optional tools are missing — nothing breaks, you 
    ```
 
 4. **Optional adapters**:
-   - Claude Code: `integrations/claude-code/settings.json`
+   - AI coding assistant: `integrations/assistant/settings.json`
    - 其他客户端：读取 `.studio/skills/*/SKILL.md` 并按各自方式注册命令
 
 ## Upgrading
@@ -235,7 +235,7 @@ You stay in control. The agents provide structure and expertise, not autonomy.
 | `session-start.sh` | Session open | Shows current branch and recent commits for orientation |
 | `detect-gaps.sh` | Session open | Detects fresh projects (suggests `/start`) and missing design docs when code or prototypes exist |
 | `pre-compact.sh` | Before compaction | Preserves session progress notes |
-| `post-compact.sh` | After compaction | Reminds Claude to restore session state from `active.md` |
+| `post-compact.sh` | After compaction | Reminds assistant to restore session state from `active.md` |
 | `notify.sh` | Notification event | Shows Windows toast notification via PowerShell |
 | `session-stop.sh` | Session close | Archives `active.md` to session log and records git activity |
 | `log-agent.sh` | Agent spawned | Audit trail start — logs subagent invocation |
@@ -289,8 +289,8 @@ Tested on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns 
 
 ## Community
 
-- **Discussions** — [GitHub Discussions](https://github.com/Donchitos/Claude-Code-Game-Studios/discussions) for questions, ideas, and showcasing what you've built
-- **Issues** — [Bug reports and feature requests](https://github.com/Donchitos/Claude-Code-Game-Studios/issues)
+- **Discussions** — [GitHub Discussions](https://github.com/your-org/Universal-AI-Game-Studios/discussions) for questions, ideas, and showcasing what you've built
+- **Issues** — [Bug reports and feature requests](https://github.com/your-org/Universal-AI-Game-Studios/issues)
 
 ---
 

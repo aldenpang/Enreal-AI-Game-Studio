@@ -29,7 +29,7 @@ What actually happened. Include any error messages or unexpected output.
 
 - **OS**: (e.g., Windows 10, macOS 14, Ubuntu 24.04)
 - **Shell**: (e.g., Git Bash, zsh, bash)
-- **AI Coding Assistant version**: (run `claude --version`)
+- **Assistant CLI version**: (run your assistant CLI `--version`)
 - **Node.js version**: (run `node --version`)
 - **jq installed?**: Yes / No
 - **Python installed?**: Yes / No

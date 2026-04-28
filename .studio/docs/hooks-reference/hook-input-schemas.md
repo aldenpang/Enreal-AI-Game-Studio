@@ -100,7 +100,7 @@ Fired when a subagent is spawned via the Task tool.
 
 ## SessionStart
 
-Fired when a AI Coding Assistant session begins. **No stdin input** — the hook just runs and its stdout is shown to Claude as context.
+Fired when a AI Coding Assistant session begins. **No stdin input** — the hook just runs and its stdout is shown to assistant as context.
 
 ## PreCompact
 
@@ -115,7 +115,7 @@ Fired when the AI Coding Assistant session ends. **No stdin input** — the hook
 | Exit Code | Meaning | Applicable Events |
 |-----------|---------|-------------------|
 | 0 | Allow / Success | All events |
-| 2 | Block (stderr shown to Claude) | PreToolUse only |
+| 2 | Block (stderr shown to assistant) | PreToolUse only |
 | Other | Treated as error, tool proceeds | All events |
 
 ## Notes

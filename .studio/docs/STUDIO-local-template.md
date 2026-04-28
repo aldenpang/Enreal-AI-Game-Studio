@@ -32,6 +32,6 @@ This file is gitignored and will not be committed.
 
 ## Setup
 
-1. Copy this template to your project root: `cp .studio/docs/CLAUDE-local-template.md STUDIO.local.md`
+1. Copy this template to your project root: `cp .studio/docs/STUDIO-local-template.md STUDIO.local.md`
 2. Edit to match your preferences
 3. Verify `STUDIO.local.md` is in `.gitignore` (AI Coding Assistant reads it from the project root)

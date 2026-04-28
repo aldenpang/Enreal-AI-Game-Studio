@@ -99,7 +99,7 @@ Read the GDD and identify every domain present. A GDD can touch multiple domains
 
 ### Step 2 — Spawn all relevant specialists in parallel
 
-**CRITICAL: Task in this skill spawns a SUBAGENT — a separate independent Claude session
+**CRITICAL: Task in this skill spawns a SUBAGENT — a separate independent agent session
 with its own context window. It is NOT task tracking. Do NOT simulate specialist
 perspectives internally. Do NOT reason through domain views yourself. You MUST issue
 actual Task calls. A simulated review is not a specialist review.**

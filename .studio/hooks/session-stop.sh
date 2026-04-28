@@ -1,5 +1,5 @@
 #!/bin/bash
-# AI Coding Assistant Stop hook: Log session summary when Claude finishes
+# AI Coding Assistant Stop hook: Log session summary when the assistant finishes
 # Records what was worked on for audit trail and sprint tracking
 
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)

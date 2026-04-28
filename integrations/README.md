@@ -2,7 +2,7 @@
 
 This folder contains provider/client-specific wiring.
 
-- `claude-code/settings.json`: original hook/permission config for Claude Code users.
+- `assistant/settings.json`: original hook/permission config example for assistant clients.
 
 For any other client (Codex CLI, OpenClaw, Cursor, local agents):
 1. Keep `.studio/agents`, `.studio/skills`, `.studio/rules`, `.studio/hooks` as source of truth.

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # post-compact.sh — fires after conversation compaction
-# Reminds Claude to restore session state from the file-backed checkpoint.
+# Reminds assistant to restore session state from the file-backed checkpoint.
 
 ACTIVE="production/session-state/active.md"
 

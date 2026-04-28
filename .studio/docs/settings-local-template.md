@@ -28,7 +28,7 @@ be committed to version control. Add it to `.gitignore`.
 AI Coding Assistant supports different permission modes. Recommended for game dev:
 
 ### During Development (Default)
-Use **normal mode** — Claude asks before running most commands. This is safest
+Use **normal mode** — assistant asks before running most commands. This is safest
 for production code.
 
 ### During Prototyping
@@ -36,7 +36,7 @@ Use **auto-accept mode** with limited scope — faster iteration on throwaway co
 Only use this when working in `prototypes/` directory.
 
 ### During Code Review
-Use **read-only** permissions — Claude can read and search but not modify files.
+Use **read-only** permissions — assistant can read and search but not modify files.
 
 ## Customizing Hooks Locally
 

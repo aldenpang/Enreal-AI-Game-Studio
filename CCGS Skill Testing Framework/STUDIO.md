@@ -1,4 +1,4 @@
-# CCGS Skill Testing Framework — Claude Instructions
+# CCGS Skill Testing Framework — assistant Instructions
 
 This folder is the quality assurance layer for the Universal AI Game Studios skill/agent
 framework. It is self-contained and separate from any game project.

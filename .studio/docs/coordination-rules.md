@@ -48,7 +48,7 @@ than waiting. Example: `/review-all-gdds` Phase 1 (consistency) and Phase 2
 ### Agent Teams (experimental — opt-in)
 Multiple independent AI Coding Assistant *sessions* running simultaneously, coordinated
 via a shared task list. Each session has its own context window and token budget.
-Requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` environment variable.
+Requires `AI_AGENT_TEAMS=1` environment variable.
 
 **Use agent teams when**:
 - Work spans multiple subsystems that will not touch the same files

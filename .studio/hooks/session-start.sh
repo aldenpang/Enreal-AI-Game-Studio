@@ -1,6 +1,6 @@
 #!/bin/bash
 # AI Coding Assistant SessionStart hook: Load project context at session start
-# Outputs context information that Claude sees when a session begins
+# Outputs context information that assistant sees when a session begins
 #
 # Input schema (SessionStart): No stdin input
 
