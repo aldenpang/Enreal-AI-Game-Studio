@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Universal AI Game Studios — Status Line
+# Enreal AI Game Studio — Status Line
 # Receives JSON on stdin, outputs a single-line status.
 #
 # Segments: ctx% | model | production stage [| Epic > Feature > Task]

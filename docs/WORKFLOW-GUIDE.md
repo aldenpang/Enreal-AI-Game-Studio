@@ -1,4 +1,4 @@
-# Universal AI Game Studios -- Complete Workflow Guide
+# Enreal AI Game Studio -- Complete Workflow Guide
 
 > **How to go from zero to a shipped game using the Agent Architecture.**
 >
@@ -70,7 +70,7 @@ Start a new AI Coding Assistant session. You should see output from the
 `session-start.sh` hook:
 
 ```
-=== Universal AI Game Studios -- Session Context ===
+=== Enreal AI Game Studio -- Session Context ===
 Branch: main
 Recent commits:
   abc1234 Initial commit

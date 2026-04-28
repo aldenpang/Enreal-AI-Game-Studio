@@ -1,18 +1,18 @@
-# CCGS Skill Testing Framework
+# EAGS Skill Testing Framework
 
-Quality assurance infrastructure for the **Universal AI Game Studios** framework.
+Quality assurance infrastructure for the **Enreal AI Game Studio** framework.
 Tests the skills and agents themselves — not any game built with them.
 
 > **This folder is self-contained and optional.**
-> Game developers using CCGS don't need it. To remove it entirely:
-> `rm -rf "CCGS Skill Testing Framework"` — nothing in `.studio/` depends on it.
+> Game developers using EAGS don't need it. To remove it entirely:
+> `rm -rf "EAGS Skill Testing Framework"` — nothing in `.studio/` depends on it.
 
 ---
 
 ## What's in here
 
 ```
-CCGS Skill Testing Framework/
+EAGS Skill Testing Framework/
 ├── README.md              ← you are here
 ├── STUDIO.md              ← tells assistant how to use this framework
 ├── catalog.yaml           ← master registry: all 72 skills + 49 agents, coverage tracking
@@ -142,7 +142,7 @@ All testing is driven by two skills already in the framework:
 This folder has no hooks into the main project. To remove:
 
 ```bash
-rm -rf "CCGS Skill Testing Framework"
+rm -rf "EAGS Skill Testing Framework"
 ```
 
 The skills `/skill-test` and `/skill-improve` will still function — they'll simply

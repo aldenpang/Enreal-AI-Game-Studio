@@ -4,7 +4,7 @@
 #
 # Input schema (SessionStart): No stdin input
 
-echo "=== Universal AI Game Studios — Session Context ==="
+echo "=== Enreal AI Game Studio — Session Context ==="
 
 # Current branch
 BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)

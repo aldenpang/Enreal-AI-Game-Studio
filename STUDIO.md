@@ -1,4 +1,4 @@
-# Universal AI Game Studios -- Game Studio Agent Architecture
+# Enreal AI Game Studio -- Game Studio Agent Architecture
 
 Indie game development managed through 48 coordinated AI Coding Assistant subagents.
 Each agent owns a specific domain, enforcing separation of concerns and quality.

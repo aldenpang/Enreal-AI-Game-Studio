@@ -1,4 +1,4 @@
-# Upgrading Universal AI Game Studios
+# Upgrading Enreal AI Game Studio
 
 This guide covers upgrading your existing game project repo from one version
 of the template to the next.
@@ -33,7 +33,7 @@ Best when: you cloned the template and have your own commits on top of it.
 
 ```bash
 # Add the template as a remote (one-time setup)
-git remote add template https://github.com/your-org/Universal-AI-Game-Studios.git
+git remote add template https://github.com/your-org/Enreal-AI-Game-Studio.git
 
 # Fetch the new version
 git fetch template main
@@ -58,7 +58,7 @@ Best when: you only want one specific feature (e.g., just the new skill, not
 the full update).
 
 ```bash
-git remote add template https://github.com/your-org/Universal-AI-Game-Studios.git
+git remote add template https://github.com/your-org/Enreal-AI-Game-Studio.git
 git fetch template main
 
 # Cherry-pick the specific commit(s) you want
