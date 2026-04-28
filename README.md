@@ -1,9 +1,11 @@
 <p align="center">
   <h1 align="center">Enreal AI Game Studio</h1>
   <p align="center">
-    Turn a single AI Coding Assistant session into a full game development studio.
+    Turn a single AI coding session into a full game development studio.<br/>
+    将单个 AI 编码会话升级为完整的游戏开发工作室。
     <br />
-    49 agents. 72 skills. One coordinated AI team.
+    49 agents. 72 skills. One coordinated AI team.<br/>
+    49 个智能体，72 个技能，一个协同 AI 团队。
   </p>
 </p>
 
@@ -13,295 +15,154 @@
   <a href=".studio/skills"><img src="https://img.shields.io/badge/skills-72-green" alt="72 Skills"></a>
   <a href=".studio/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".studio/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
-  <a href="https://github.com/features/models"><img src="https://img.shields.io/badge/built%20for-Any%20AI%20Model-f5f5f5?logo=provider" alt="Built for AI Coding Assistant"></a>
 </p>
 
 ---
 
 ## Why This Exists
+## 为什么会有这个项目
 
-Building a game solo with AI is powerful — but a single chat session has no structure. No one stops you from hardcoding magic numbers, skipping design docs, or writing spaghetti code. There's no QA pass, no design review, no one asking "does this actually fit the game's vision?"
+Building games with AI is powerful, but unstructured chat easily leads to messy code, weak design review, and missing QA.
+使用 AI 做游戏很强大，但如果没有结构化流程，很容易出现代码混乱、设计缺乏评审、QA 缺失等问题。
 
-**Enreal AI Game Studio** solves this by giving your AI session the structure of a real studio. Instead of one general-purpose assistant, you get 49 specialized agents organized into a studio hierarchy — directors who guard the vision, department leads who own their domains, and specialists who do the hands-on work. Each agent has defined responsibilities, escalation paths, and quality gates.
-
-The result: you still make every decision, but now you have a team that asks the right questions, catches mistakes early, and keeps your project organized from first brainstorm to launch.
-
----
-
-## Table of Contents
-
-- [What's Included](#whats-included)
-- [Studio Hierarchy](#studio-hierarchy)
-- [Slash Commands](#slash-commands)
-- [Getting Started](#getting-started)
-- [Upgrading](#upgrading)
-- [Project Structure](#project-structure)
-- [How It Works](#how-it-works)
-- [Design Philosophy](#design-philosophy)
-- [Customization](#customization)
-- [Platform Support](#platform-support)
-- [Community](#community)
-- [License](#license)
+**Enreal AI Game Studio** adds studio-style structure: directors, leads, specialists, quality gates, and reusable workflows.
+**Enreal AI Game Studio** 提供“工作室级”结构：总监、负责人、专家分工、质量关卡和可复用工作流。
 
 ---
 
-## What's Included
+## What’s Included
+## 包含内容
 
-| Category | Count | Description |
-|----------|-------|-------------|
-| **Agents** | 49 | Specialized subagents across design, programming, art, audio, narrative, QA, and production |
-| **Skills** | 72 | Slash commands for every workflow phase (`/start`, `/design-system`, `/create-epics`, `/create-stories`, `/dev-story`, `/story-done`, etc.) |
-| **Hooks** | 12 | Automated validation on commits, pushes, asset changes, session lifecycle, agent audit trail, and gap detection |
-| **Rules** | 11 | Path-scoped coding standards enforced when editing gameplay, engine, AI, UI, network code, and more |
-| **Templates** | 39 | Document templates for GDDs, UX specs, ADRs, sprint plans, HUD design, accessibility, and more |
+| Category | Description |
+|---|---|
+| Agents | 49 specialized agents across design/programming/art/audio/QA/production |
+| Skills | 72 workflow skills for planning, implementation, review, testing, release |
+| Hooks | 12 automation hooks for validation, logging, and safety checks |
+| Rules | 11 path-scoped coding/design rules |
+| Templates | 39 templates for docs, specs, plans, and reports |
 
-## Studio Hierarchy
+| 类别 | 说明 |
+|---|---|
+| Agents | 49 个覆盖设计/程序/美术/音频/测试/制作的专业智能体 |
+| Skills | 72 个用于规划、开发、评审、测试、发布的工作流技能 |
+| Hooks | 12 个用于校验、日志与安全检查的自动化 Hook |
+| Rules | 11 个按目录生效的代码/文档规范 |
+| Templates | 39 个用于文档、规格、计划和报告的模板 |
 
-Agents are organized into three tiers, matching how real studios operate:
-
-```
-Tier 1 — Directors (Opus)
-  creative-director    technical-director    producer
-
-Tier 2 — Department Leads (Sonnet)
-  game-designer        lead-programmer       art-director
-  audio-director       narrative-director    qa-lead
-  release-manager      localization-lead
-
-Tier 3 — Specialists (Sonnet/Haiku)
-  gameplay-programmer  engine-programmer     ai-programmer
-  network-programmer   tools-programmer      ui-programmer
-  systems-designer     level-designer        economy-designer
-  technical-artist     sound-designer        writer
-  world-builder        ux-designer           prototyper
-  performance-analyst  devops-engineer       analytics-engineer
-  security-engineer    qa-tester             accessibility-specialist
-  live-ops-designer    community-manager
-```
-
-### Engine Specialists
-
-The template includes agent sets for all three major engines. Use the set that matches your project:
-
-| Engine | Lead Agent | Sub-Specialists |
-|--------|-----------|-----------------|
-| **Godot 4** | `godot-specialist` | GDScript, Shaders, GDExtension |
-| **Unity** | `unity-specialist` | DOTS/ECS, Shaders/VFX, Addressables, UI Toolkit |
-| **Unreal Engine 5** | `unreal-specialist` | GAS, Blueprints, Replication, UMG/CommonUI |
-
-## Slash Commands
-
-Type `/` in AI Coding Assistant to access all 72 skills:
-
-**Onboarding & Navigation**
-`/start` `/help` `/project-stage-detect` `/setup-engine` `/adopt`
-
-**Game Design**
-`/brainstorm` `/map-systems` `/design-system` `/quick-design` `/review-all-gdds` `/propagate-design-change`
-
-**Art & Assets**
-`/art-bible` `/asset-spec` `/asset-audit`
-
-**UX & Interface Design**
-`/ux-design` `/ux-review`
-
-**Architecture**
-`/create-architecture` `/architecture-decision` `/architecture-review` `/create-control-manifest`
-
-**Stories & Sprints**
-`/create-epics` `/create-stories` `/dev-story` `/sprint-plan` `/sprint-status` `/story-readiness` `/story-done` `/estimate`
-
-**Reviews & Analysis**
-`/design-review` `/code-review` `/balance-check` `/content-audit` `/scope-check` `/perf-profile` `/tech-debt` `/gate-check` `/consistency-check`
-
-**QA & Testing**
-`/qa-plan` `/smoke-check` `/soak-test` `/regression-suite` `/test-setup` `/test-helpers` `/test-evidence-review` `/test-flakiness` `/skill-test` `/skill-improve`
-
-**Production**
-`/milestone-review` `/retrospective` `/bug-report` `/bug-triage` `/reverse-document` `/playtest-report`
-
-**Release**
-`/release-checklist` `/launch-checklist` `/changelog` `/patch-notes` `/hotfix`
-
-**Creative & Content**
-`/prototype` `/onboard` `/localize`
-
-**Team Orchestration** (coordinate multiple agents on a single feature)
-`/team-combat` `/team-narrative` `/team-ui` `/team-release` `/team-polish` `/team-audio` `/team-level` `/team-live-ops` `/team-qa`
+---
 
 ## Getting Started
+## 快速开始
 
 ### Prerequisites
+### 环境要求
 
-- [Git](https://git-scm.com/)
-- Any coding AI client (OpenClaw/Codex CLI/AI coding assistant/Cursor/Windsurf/custom)
+- Git
+- Any coding AI client (OpenClaw / Codex CLI / Cursor / Windsurf / custom)
 - Python 3.10+
-- **Recommended**: [jq](https://jqlang.github.io/jq/) (for hook validation)
 
-All hooks fail gracefully if optional tools are missing — nothing breaks, you just lose validation.
+- Git
+- 任意编码 AI 客户端（OpenClaw / Codex CLI / Cursor / Windsurf / 自定义）
+- Python 3.10+
 
 ### Setup
+### 安装步骤
 
-1. **Clone this repo**:
-   ```bash
-   git clone <your-new-repo-url> my-game
-   cd my-game
-   ```
-
-2. **Configure model providers**:
-   ```bash
-   cp config/providers.example.yaml config/providers.yaml
-   # edit model/base_url/api key env names as needed
-   ```
-
-3. **Run any skill with any OpenAI-compatible model**:
-   ```bash
-   pip install pyyaml openai
-   python scripts/run_skill.py start "我现在只有一个模糊想法，帮我起步" --provider codex
-   python scripts/run_skill.py design-system "设计背包系统" --provider deepseek
-   python scripts/run_skill.py create-stories "把战斗系统拆分成可开发故事" --provider gemma4_local
-   ```
-
-4. **Optional adapters**:
-   - AI coding assistant: `integrations/assistant/settings.json`
-   - 其他客户端：读取 `.studio/skills/*/SKILL.md` 并按各自方式注册命令
-
-## Upgrading
-
-Already using an older version of this template? See [UPGRADING.md](UPGRADING.md)
-for step-by-step migration instructions, a breakdown of what changed between
-versions, and which files are safe to overwrite vs. which need a manual merge.
-
-## Project Structure
-
-```
-STUDIO.md                           # Master configuration
-.studio/
-  settings.json                     # Hooks, permissions, safety rules
-  agents/                           # 49 agent definitions (markdown + YAML frontmatter)
-  skills/                           # 72 slash commands (subdirectory per skill)
-  hooks/                            # 12 hook scripts (bash, cross-platform)
-  rules/                            # 11 path-scoped coding standards
-  statusline.sh                     # Status line script (context%, model, stage, epic breadcrumb)
-  docs/
-    workflow-catalog.yaml           # 7-phase pipeline definition (read by /help)
-    templates/                      # 39 document templates
-src/                                # Game source code
-assets/                             # Art, audio, VFX, shaders, data files
-design/                             # GDDs, narrative docs, level designs
-docs/                               # Technical documentation and ADRs
-tests/                              # Test suites (unit, integration, performance, playtest)
-tools/                              # Build and pipeline tools
-prototypes/                         # Throwaway prototypes (isolated from src/)
-production/                         # Sprint plans, milestones, release tracking
+1. Clone repo  
+   克隆仓库
+```bash
+git clone https://github.com/aldenpang/Enreal-AI-Game-Studio.git
+cd Enreal-AI-Game-Studio
 ```
 
-## How It Works
+2. Configure providers  
+   配置模型提供方
+```bash
+cp config/providers.example.yaml config/providers.yaml
+# edit provider/model/base_url/api key env
+```
 
-### Agent Coordination
-
-Agents follow a structured delegation model:
-
-1. **Vertical delegation** — directors delegate to leads, leads delegate to specialists
-2. **Horizontal consultation** — same-tier agents can consult each other but can't make binding cross-domain decisions
-3. **Conflict resolution** — disagreements escalate up to the shared parent (`creative-director` for design, `technical-director` for technical)
-4. **Change propagation** — cross-department changes are coordinated by `producer`
-5. **Domain boundaries** — agents don't modify files outside their domain without explicit delegation
-
-### Collaborative, Not Autonomous
-
-This is **not** an auto-pilot system. Every agent follows a strict collaboration protocol:
-
-1. **Ask** — agents ask questions before proposing solutions
-2. **Present options** — agents show 2-4 options with pros/cons
-3. **You decide** — the user always makes the call
-4. **Draft** — agents show work before finalizing
-5. **Approve** — nothing gets written without your sign-off
-
-You stay in control. The agents provide structure and expertise, not autonomy.
-
-### Automated Safety
-
-**Hooks** run automatically on every session:
-
-| Hook | Trigger | What It Does |
-|------|---------|--------------|
-| `validate-commit.sh` | PreToolUse (Bash) | Checks for hardcoded values, TODO format, JSON validity, design doc sections — exits early if the command is not `git commit` |
-| `validate-push.sh` | PreToolUse (Bash) | Warns on pushes to protected branches — exits early if the command is not `git push` |
-| `validate-assets.sh` | PostToolUse (Write/Edit) | Validates naming conventions and JSON structure — exits early if the file is not in `assets/` |
-| `session-start.sh` | Session open | Shows current branch and recent commits for orientation |
-| `detect-gaps.sh` | Session open | Detects fresh projects (suggests `/start`) and missing design docs when code or prototypes exist |
-| `pre-compact.sh` | Before compaction | Preserves session progress notes |
-| `post-compact.sh` | After compaction | Reminds assistant to restore session state from `active.md` |
-| `notify.sh` | Notification event | Shows Windows toast notification via PowerShell |
-| `session-stop.sh` | Session close | Archives `active.md` to session log and records git activity |
-| `log-agent.sh` | Agent spawned | Audit trail start — logs subagent invocation |
-| `log-agent-stop.sh` | Agent stops | Audit trail stop — completes subagent record |
-| `validate-skill-change.sh` | PostToolUse (Write/Edit) | Advises running `/skill-test` after any `.studio/skills/` change |
-
-> **Note**: `validate-commit.sh`, `validate-assets.sh`, and `validate-skill-change.sh` fire on every Bash/Write tool call and exit immediately (exit 0) when the command or file path is not relevant. This is normal hook behavior — not a performance concern.
-
-**Permission rules** in `settings.json` auto-allow safe operations (git status, test runs) and block dangerous ones (force push, `rm -rf`, reading `.env` files).
-
-### Path-Scoped Rules
-
-Coding standards are automatically enforced based on file location:
-
-| Path | Enforces |
-|------|----------|
-| `src/gameplay/**` | Data-driven values, delta time usage, no UI references |
-| `src/core/**` | Zero allocations in hot paths, thread safety, API stability |
-| `src/ai/**` | Performance budgets, debuggability, data-driven parameters |
-| `src/networking/**` | Server-authoritative, versioned messages, security |
-| `src/ui/**` | No game state ownership, localization-ready, accessibility |
-| `design/gdd/**` | Required 8 sections, formula format, edge cases |
-| `tests/**` | Test naming, coverage requirements, fixture patterns |
-| `prototypes/**` | Relaxed standards, README required, hypothesis documented |
-
-## Design Philosophy
-
-This template is grounded in professional game development practices:
-
-- **MDA Framework** — Mechanics, Dynamics, Aesthetics analysis for game design
-- **Self-Determination Theory** — Autonomy, Competence, Relatedness for player motivation
-- **Flow State Design** — Challenge-skill balance for player engagement
-- **Bartle Player Types** — Audience targeting and validation
-- **Verification-Driven Development** — Tests first, then implementation
-
-## Customization
-
-This is a **template**, not a locked framework. Everything is meant to be customized:
-
-- **Add/remove agents** — delete agent files you don't need, add new ones for your domains
-- **Edit agent prompts** — tune agent behavior, add project-specific knowledge
-- **Modify skills** — adjust workflows to match your team's process
-- **Add rules** — create new path-scoped rules for your project's directory structure
-- **Tune hooks** — adjust validation strictness, add new checks
-- **Pick your engine** — use the Godot, Unity, or Unreal agent set (or none)
-- **Set review intensity** — `full` (all director gates), `lean` (phase gates only), or `solo` (none). Set during `/start` or edit `production/review-mode.txt`. Override per-run with `--review solo` on any skill.
-
-## Platform Support
-
-Tested on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns (`grep -E`, not `grep -P`) and include fallbacks for missing tools. Works on macOS and Linux without modification.
-
-## Community
-
-- **Discussions** — [GitHub Discussions](https://github.com/your-org/Enreal-AI-Game-Studio/discussions) for questions, ideas, and showcasing what you've built
-- **Issues** — [Bug reports and feature requests](https://github.com/your-org/Enreal-AI-Game-Studio/issues)
-
-## Acknowledgement
-
-Special thanks to the original author and project:
-
-- **Donchitos — Claude Code Game Studios**  
-  <https://github.com/Donchitos/Claude-Code-Game-Studios>
-
-This project is inspired by and adapted from that work, then extended into a model-agnostic version.
+3. Install runtime deps and run a skill  
+   安装依赖并运行技能
+```bash
+pip install pyyaml openai
+python scripts/run_skill.py start "I only have a rough game idea" --provider codex
+python scripts/run_skill.py design-system "设计背包系统" --provider deepseek
+python scripts/run_skill.py create-stories "将战斗系统拆成可开发故事" --provider gemma4_local
+```
 
 ---
 
-*Model-agnostic and client-agnostic. Works with Codex, DeepSeek, and local OpenAI-compatible models (including Gemma deployments via Ollama/vLLM).*
+## Core Structure
+## 核心目录结构
+
+```text
+STUDIO.md
+.studio/
+  agents/
+  skills/
+  hooks/
+  rules/
+  docs/
+config/
+scripts/
+src/
+design/
+production/
+```
+
+`STUDIO.md` and `.studio/*` are the collaboration core.
+`STUDIO.md` 与 `.studio/*` 是协作核心。
+
+---
+
+## How It Works
+## 工作方式
+
+- Vertical delegation: directors → leads → specialists.  
+  纵向委派：总监 → 负责人 → 专家。
+- Human-in-the-loop: ask → options → decision → draft → approval.  
+  人类在环：提问 → 方案 → 决策 → 草稿 → 批准。
+- Hooks and rules enforce consistency and safety automatically.  
+  通过 Hooks 与规则自动保障一致性与安全性。
+
+---
+
+## Model-Agnostic Design
+## 模型无关设计
+
+This repo is provider-neutral and works with OpenAI-compatible APIs, including Codex-style models, DeepSeek, and local models via Ollama/vLLM.
+本仓库是提供方中立设计，支持 OpenAI 兼容 API，包括 Codex 类模型、DeepSeek，以及通过 Ollama/vLLM 接入的本地模型。
+
+---
+
+## Community
+## 社区
+
+- Discussions: <https://github.com/aldenpang/Enreal-AI-Game-Studio/discussions>
+- Issues: <https://github.com/aldenpang/Enreal-AI-Game-Studio/issues>
+
+- 讨论区：<https://github.com/aldenpang/Enreal-AI-Game-Studio/discussions>
+- 问题反馈：<https://github.com/aldenpang/Enreal-AI-Game-Studio/issues>
+
+---
+
+## Acknowledgement
+## 致谢
+
+Special thanks to the original author and repository:
+特别感谢原作者与原始项目：
+
+- Donchitos — Claude Code Game Studios  
+  <https://github.com/Donchitos/Claude-Code-Game-Studios>
+
+This project is inspired by that work and adapted into a model-agnostic version.
+本项目基于其思路进行二次改造，扩展为模型无关版本。
+
+---
 
 ## License
+## 许可证
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See [LICENSE](LICENSE).
+MIT 许可证，详见 [LICENSE](LICENSE)。
