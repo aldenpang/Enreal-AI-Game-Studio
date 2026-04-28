@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json.schemastore.org/json",
+  "project": "Universal AI Game Studios",
+  "description": "Model-agnostic studio pack. Provider-specific wiring lives in integrations/.",
+  "providers": {
+    "config": "config/providers.example.yaml"
+  }
+}
