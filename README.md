@@ -289,7 +289,14 @@ Tested on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns 
 - **Discussions** — [GitHub Discussions](https://github.com/your-org/Enreal-AI-Game-Studio/discussions) for questions, ideas, and showcasing what you've built
 - **Issues** — [Bug reports and feature requests](https://github.com/your-org/Enreal-AI-Game-Studio/issues)
 
----
+## Acknowledgement
+
+Special thanks to the original author and project:
+
+- **Donchitos — Claude Code Game Studios**  
+  <https://github.com/Donchitos/Claude-Code-Game-Studios>
+
+This project is inspired by and adapted from that work, then extended into a model-agnostic version.
 
 ---
 
