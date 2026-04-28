@@ -14,8 +14,6 @@
   <a href=".studio/hooks"><img src="https://img.shields.io/badge/hooks-12-orange" alt="12 Hooks"></a>
   <a href=".studio/rules"><img src="https://img.shields.io/badge/rules-11-red" alt="11 Rules"></a>
   <a href="https://github.com/features/models"><img src="https://img.shields.io/badge/built%20for-Any%20AI%20Model-f5f5f5?logo=provider" alt="Built for AI Coding Assistant"></a>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20this%20project-FFDD00?logo=buymeacoffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-Support%20this%20project-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
 </p>
 
 ---
@@ -43,7 +41,6 @@ The result: you still make every decision, but now you have a team that asks the
 - [Customization](#customization)
 - [Platform Support](#platform-support)
 - [Community](#community)
-- [Supporting This Project](#supporting-this-project)
 - [License](#license)
 
 ---
@@ -293,21 +290,6 @@ Tested on **Windows 10** with Git Bash. All hooks use POSIX-compatible patterns 
 - **Issues** — [Bug reports and feature requests](https://github.com/your-org/Enreal-AI-Game-Studio/issues)
 
 ---
-
-## Supporting This Project
-
-Enreal AI Game Studio is free and open source. If it saves you time or helps you ship your game, consider supporting continued development:
-
-<p>
-  <a href="https://www.buymeacoffee.com/donchitos3"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
-  &nbsp;
-  <a href="https://github.com/sponsors/Donchitos"><img src="https://img.shields.io/badge/GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
-</p>
-
-- **[Buy Me a Coffee](https://www.buymeacoffee.com/donchitos3)** — one-time support
-- **[GitHub Sponsors](https://github.com/sponsors/Donchitos)** — recurring support through GitHub
-
-Sponsorships help fund time spent maintaining skills, adding new agents, keeping up with AI Coding Assistant and engine API changes, and responding to community issues.
 
 ---
 
